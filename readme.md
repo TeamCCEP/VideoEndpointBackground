@@ -28,13 +28,13 @@ To successfully deploy video backgrounds, it is critical to understand the diffe
 
 ### Timings and Sensors
 By default, the system waits **10 minutes** of inactivity before entering Halfwake.
-*   **Note:** Cisco devices utilize ultrasound and camera-based motion detection. If a person is detected in the room, the timer resets, and the device will not enter Halfwake. The signage will typically only activate when the room is physically empty or the occupants are very still.
+*   **Note:** Cisco devices utilize ultrasound and camera-based motion detection. If a person is detected in the room, the timer resets, and the device will not enter Halfwake. The signage will typically only activate when the room is physically empty or the occupants are very still.  See the troubleshooting section for further info on this.
 
 ---
 
 ## Configuration Guide
 
-You can configure these settings on a single device via the device's web interface, or via Cisco Control Hub.
+You can configure these settings on a single device via the device's web interface, or via Cisco Control Hub.  Take a copy of the idle.htm file, and host it on a web server alongside your video.  Change the reference to the video file in idle.htm to point to your own video file link, then adjust configurations on control hub on the relevant endpoints.
 
 ### Required Configurations
 To enable the video background, [apply the following configurations:](https://help.webex.com/en-us/article/n5pqqcm/Device-configurations-for-Board,-Desk,-and-Room-Series-devices)
